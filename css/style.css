@@ -1,0 +1,898 @@
+/* TOC 
+
+--HOME PAGE--
+1. CSS RESET
+2. GENERAL STYLING
+3. INTRO
+    3a. NAV
+4. ABOUT
+5. WORK
+    5a. GALLERY
+6. CONTACT
+7. FOOTER
+    7a. MONOGRAM
+
+
+--CASE STUDIES--
+1. CASE STUDY
+    1a. CASE STUDY IMAGES
+
+
+--MEDIA QUERIES--
+1. IMAGES
+    -70em
+    -55em
+
+2. TABLET
+    -general
+    -specific
+    -case study
+
+3. MOBILE
+    -general
+    -specific
+    -case study
+
+4. SMALL MOBILE
+    -general
+    -specific
+    -gallery
+    -case study
+*/
+
+
+
+
+/* 1. CSS RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1em;
+}
+
+
+/* 2. GENERAL STYLING */
+
+body {
+    width: 100%;
+    font-family: futura-pt, Futura, sans-serif;
+    font-weight: 500;
+    margin: auto;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+section {
+    padding-bottom: 1em;
+}
+
+h1, h2, h3, h4 {
+    font-family:  futura-pt, Futura PT, Futura, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3.5em;
+    margin: 0.75em auto 0.5em auto;
+}
+
+h3 {
+    font-size: 1.75em;
+    margin: 2em auto 0.5em auto;
+}
+
+h4 {
+    font-size: 1.25em;
+    margin: 2em auto 0.5em auto;
+}
+
+h4 a {
+    text-decoration: underline #6AD4EB;
+}
+
+p {
+    width: 75%;
+    max-width: 700px;
+    margin: auto;
+    font-size: 130%;
+    line-height: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+footer p {
+    font-size: 90%;
+    font-style: italic;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.text-link {
+    text-decoration: underline #6AD4EB;
+}
+
+.button {
+    text-align: center;
+}
+
+.button a {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0.5em auto 0.5em auto;
+    background-color: #6AD4EB;
+    border: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border-radius: 0.2em;
+     -webkit-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: box-shadow 0.1s ease-out;
+}
+
+.button a:hover {
+    transform: scale(1.05);
+    box-shadow: 0.02em 0.06em 0.2em rgba(0,0,0,0.2);
+}
+
+
+ul li {
+    display: inline;
+}
+
+.replace {
+    display: none;
+}
+
+
+/* 3. INTRO */
+
+#backgroundbrain {
+    background-image: url("../images/brainlines.png");
+    height: 52.75em;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#wordmark {
+    width: 40%;
+    display: block;
+    margin: 1.5em auto 2em auto;
+}
+
+#intro p {
+    text-align: center;
+}
+
+/* 3a. NAV */
+
+#nav1 ul {
+    text-align: right;
+}
+
+nav img {
+    width: 5%;
+    margin: 0.5em;
+}
+
+
+nav a img {
+    -webkit-transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+}
+
+nav a:hover img {
+   -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+/* 4. ABOUT */
+
+#lungs {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about {
+    background: #000000;
+    width: 100%;
+}
+
+#about p {
+    color: #ffffff;
+}
+
+#about h2 {
+    color: #ffffff;
+}
+
+#about .text-link {
+    color: #ffffff;
+}
+
+
+/* 5. WORK */
+
+#heart {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pulse {
+    background-image: url("../images/pulse.svg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 20em;
+}
+
+#background {
+    background-color: #6AD4EB;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+/* 5a. GALLERY */
+
+.gallery {
+    width: 90%;
+    margin: auto;
+    padding: 2em auto 2em auto;
+}
+
+.flexgallery {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flexgallery div {
+    background: #ffffff;
+    height: 13em;
+    width: 30em; 
+    margin: 0.5em;
+    border-radius: 0.4em;
+    -webkit-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: box-shadow 0.1s ease-out;
+}
+
+.flexgallery div:hover {
+    transform: scale(1.01);
+    box-shadow: 0.2em 0.3em 0.7em rgba(0,0,0,0.2);
+}
+
+.flexitem a {
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin: 0.5em auto 0.5em auto;
+    display: inline-block;
+    border-radius: 0.2em;
+}
+
+.flexitem img {
+    width: 20%;
+}
+
+.title {
+    text-transform: uppercase;
+    display: block;
+}
+
+.type {
+    font-weight: 500;
+    font-size: 80%;
+}
+
+
+/* 6. CONTACT */
+
+#contact h2 {
+    width: 70%;
+    line-height: 1.5em;
+    margin: -0.3em auto 0.3em auto;
+    padding-top: 1em;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#backgroundgut {
+    background-image: url("../images/gutlines.png");
+    height: 40em;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+
+/* 7. FOOTER */
+#links {
+    background-color: #6AD4EB;
+    padding-top: 1em;
+}
+
+.social {
+    display: inline;
+    text-align: center;
+    list-style: none;
+}
+
+.social a img {
+    -webkit-transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+}
+
+.social a:hover img {
+   -webkit-transform: scale(1.05) rotate(360deg);
+    transform: scale(1.05) rotate(360deg);
+}
+
+
+.social img {
+    width: 4.5%;
+    margin: auto 0.5em auto 0.5em;
+}
+
+
+/* 7a. MONOGRAM */
+
+.translate div {
+    width: 20%;
+}
+
+#monogram {
+    width: 10%;
+    display: block;
+    margin: 2em auto 2em auto;
+}
+
+.translate a img {
+    transform-origin: left bottom;
+     -webkit-transition: transform 0.9s ease-in-out;
+    transition: transform 0.9s ease-in-out;
+}
+
+.translate a:hover img {
+    transform: rotate(360deg) scale(0.5) translateX(50px);
+}
+
+
+
+
+
+/* CASE STUDY */
+
+/* FULL LENGTH PULSE */
+/*
+#pulse2 {
+    background-image: url("../images/pulse.svg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 20em;
+    transform: rotate(180deg);
+}
+
+#pulse2 h1 {
+    transform: rotate(180deg);
+    margin: auto;
+}
+*/
+
+#pulse2 {
+    background-image: url("../casestudy/images/pulse2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 13em;
+}
+
+header h3 {
+    margin-top: 0.75em;
+    font-weight: 400;
+}
+
+.bg-blue {
+    background: #6AD4EB;
+}
+
+.list li {
+    display: list-item;
+    list-style: disc;
+    line-height: 2em;
+    font-size: 140%;
+}
+
+.list {
+    width: 50%;
+    margin: auto;
+}
+
+.subheading {
+    font-weight: 500;
+    font-size: 1.75em;
+    margin: 1em auto 0.5em auto;
+}
+
+h3 {
+    margin: 2em auto 1em auto;
+    border-bottom: 0.25em solid #6AD4EB;
+    width: 20%;
+    padding-bottom: 0.2em;
+}
+
+
+/* 1a. CASE STUDY IMAGES */
+
+.casestudy-img {
+    display: block;
+    margin: 3em auto 1em auto;
+    width: 35%;
+}
+
+.casestudy-img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.casestudy-img:hover {
+    transform: scale(1.2);
+}
+
+.enlarge {
+    width: 50%;
+}
+
+.block {
+    display: inline-block;
+}
+
+.centre {
+    text-align: center;
+}
+
+.space {
+    margin: 2em auto 2em auto;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* 1. IMAGES */
+@media (max-width: 70em) {
+        
+    #backgroundbrain {
+        background-image: none;
+        height: auto;
+    }
+    
+    #brain {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #nav1 {
+        display: none;
+    }
+    
+    #nav2 {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+        
+    #nav2 img {
+        float: none;
+        margin: 1em;
+        display: inline-block;
+    }
+    
+    nav img {
+        width: 7.5%;
+    }
+    
+    .social img {
+        width: 5%;
+    }
+    
+    h1 {
+        padding-top: 0.5em;
+    }
+    
+    #wordmark {
+        width: 50%;
+    }
+    
+    #backgroundgut {
+        background-image: none;
+        height: auto;
+    }
+    
+    #gut {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -1em;
+    }
+    
+    #pulse {
+        background-size:auto;
+    }
+        
+    #blue {
+        background: #6AD4EB;
+    }
+    
+    #pulse h2 {
+        height: 1.4em;
+        background: #ffffff;
+    }
+    
+    .gallery {
+        width: 70%;
+    }
+    
+    .flexgallery div {
+        width: auto;
+        height: auto;
+    }
+    
+    
+    /* case study */
+    
+    #pulse2 {
+        background-image: none;
+        height: auto;
+    }
+    
+    #nav3 {
+        display: block;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    #nav3 img {
+        float: none;
+        display: inline-block;
+    }
+    
+}
+
+@media (max-width: 55em) {
+    
+    .casestudy-img {
+        width: 40%;
+    } 
+    
+    .enlarge {
+        width: 55%;
+    }
+    
+    .social img {
+        width: 7.5%;
+    }
+    
+        
+    .gallery {
+        width: 85%;
+    }
+    
+      
+    .flexgallery div {
+        width: auto;
+        height: auto;
+    }
+    
+}
+
+
+
+/* 2. TABLET */
+@media (max-width: 50em) {
+    
+    /* typography */
+    
+    p {
+        width: 80%;
+    }
+    
+    h1 {
+        font-size: 4.5em;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    /* specific */
+    
+    #wordmark {
+        width: 60%;
+    }
+    
+    nav img {
+        width: 9%;
+    }
+
+    #pulse {
+        background-image: none;
+        height: auto;
+    }
+    
+    #blue {
+        background: none;
+    }
+    
+    #pulse h2 {
+        height: auto;
+        background: none;
+    }    
+    
+    
+    /* case study */
+    
+    .casestudy-img {
+        width: 60%;
+    } 
+    
+    .enlarge {
+        width: 70%;
+    }  
+    
+    .line:before
+    .line:after{
+        border: none;
+    }
+    
+    .list li {
+    font-size: 100%;
+    }
+    
+    .list {
+        width: 65%;
+    }
+    
+}
+
+
+
+/* 3. MOBILE */
+
+@media (max-width: 35em) {
+    
+    /* typography */
+    
+    body {
+        margin: auto 0;
+        width: 100%;
+        font-size: 115%;
+    }
+    
+    p {
+        width: 90%;
+        font-size: 90%;
+    }
+    
+    h1 {
+        font-size: 3.5em;
+    }
+    
+    h2 {
+        font-size: 1.75em;
+    }
+    
+    h3 {
+        font-size: 1.1em;
+    }
+    
+    h4 {
+        font-size: 1em;
+    }
+    
+    footer p {
+        font-size: 65%;
+    }
+    
+        
+        /* specific */
+    
+    #wordmark {
+        width: 70%;
+    }
+    
+    nav img {
+        width: 12%;
+    }
+    
+    .social img {
+        width: 9%;
+    }
+      
+    #brain, #lungs, #heart, #gut {
+        width: 60%
+    }
+    
+    #monogram {
+        width: 15%;
+    }
+    
+    
+    /* gallery */
+    
+    .gallery {
+        width: 95%;
+    }
+    
+    .type {
+        font-size: 65%
+    }
+    
+    
+    /* case study */
+    
+    .line:before, 
+    .line:after {
+        border-top: 0.5em solid #6AD4EB;
+    }
+    
+    .list {
+        width: 80%;
+    }
+    
+    .list li {
+        font-size: 90%;
+    }
+        
+}
+
+
+
+/* 4. SMALL MOBILE - because my phone is tiny */
+
+@media (max-width: 30em) {
+
+    /* typography */
+    
+    body {
+        font-size: 120%;
+    }
+    
+    p {
+        width: 90%;
+        font-size: 90%;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.1em;
+        width: 90%;
+        line-height: 1.5em;
+    }
+    
+    h4 {
+        font-size: 1em;
+        width: 90%;
+    }
+    
+    footer p {
+        width: 60%;
+        font-size: 65%;
+    }
+    
+    .button a {
+        font-size: 1.25em;
+    }
+        
+    
+        /* specific */
+    
+    #wordmark {
+        width: 80%;
+    }
+    
+    nav img {
+        width: 17%;
+    }
+    
+    .social img {
+        width: 12%;
+    }
+    
+    #monogram {
+        width: 20%;
+    }
+    
+    
+    
+    /* gallery */
+    
+    .gallery {
+        width: 100%;
+        padding-bottom: 1em;
+    }
+    
+    .flexitem a {
+        font-size: 1.1em;
+        width: 95%;
+        line-height: 1em;
+    }
+    
+    .flexgallery div {
+        width: auto;
+        height: auto;
+        border-radius: 0em;
+        margin: 0.5em auto 0.5em auto;
+    }
+    
+    .flexitem img {
+        width: 30%;
+    }
+    
+    .title {
+        margin: 0.25em auto 0.25em auto;
+    }
+    
+    .type {
+        font-size: 70%;
+    }
+    
+    
+    /* case study */
+    
+    .casestudy-img {
+        width: 80%;
+    } 
+    
+    .enlarge {
+        width: 90%;
+    }
+    
+    .space {
+        margin: 1.5em auto 1.5em auto;
+    }
+    
+}
