@@ -6,6 +6,6 @@ Take a visual tour through the anatomy of a personal brand with my first portfol
 
 
 # Evolution of a Portfolio
-The portfolio above was developed retired November 2017. Discover the lastest design on [kez.ie](http://kez.ie)
+The anatomical portfolio was retired November 2017. Discover the lastest design on [kez.ie](http://kez.ie)
 
 ### [Here Be Monsters](http://kez.ie)
